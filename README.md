@@ -25,9 +25,3 @@ The enquiry form doesn't need a server. It turns the brand's answers into a What
 ## Portfolio PDF
 The "Download portfolio (PDF)" button serves `Prajakta-Biradar-Portfolio.pdf`. It is generated from `media-kit.html` (same data as the site): open it in Chrome → Print → Save as PDF, margins None, background graphics on.
 
-## Live site
-https://d-hackmt.github.io/neha-portfolio/ (GitHub Pages, deployed from `main` / root).
-
-To update: edit the files, then `git add -A && git commit -m "Update" && git push`. The site refreshes in about a minute.
-
-Open a single campaign directly with `?campaign=<brand id>`, e.g. `https://d-hackmt.github.io/neha-portfolio/?campaign=kpilates`.
