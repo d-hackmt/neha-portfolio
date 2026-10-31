@@ -22,7 +22,7 @@ const PROFILE = {
   email: "prajbiradar02@gmail.com",
 
   // WhatsApp: country code + number, digits only
-  whatsapp: "917058121302",
+  whatsapp: "917058121602",
   whatsappMessage:
     "Hi Prajakta! I saw your portfolio and would love to discuss a brand collaboration.",
 
