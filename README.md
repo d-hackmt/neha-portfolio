@@ -22,8 +22,8 @@ Write the number with the country code and digits only, e.g. `919876543210`.
 
 The enquiry form doesn't need a server. It turns the brand's answers into a WhatsApp message or an email.
 
-## Media kit PDF
-The "Download media kit" button opens the print dialog. Choose **Save as PDF** to get a clean one-page-per-section kit.
+## Portfolio PDF
+The "Download portfolio (PDF)" button serves `Prajakta-Biradar-Portfolio.pdf`. It is generated from `media-kit.html` (same data as the site): open it in Chrome → Print → Save as PDF, margins None, background graphics on.
 
 ## Live site
 https://d-hackmt.github.io/neha-portfolio/ (GitHub Pages, deployed from `main` / root).

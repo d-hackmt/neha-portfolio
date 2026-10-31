@@ -286,7 +286,6 @@
     else window.open(waLink(text), "_blank", "noopener");
   });
 
-  $("#printKit").addEventListener("click", () => window.print());
 
   /* ---------- Navigation ---------- */
   const nav = $("#nav");
