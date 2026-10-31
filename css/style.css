@@ -326,7 +326,13 @@ em { font-style: normal; color: var(--accent); }
 .brand-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 @media (max-width: 1000px) { .brand-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 720px) { .brand-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 420px) { .brand-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .brand-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .brand-grid .brand { flex-direction: column; align-items: flex-start; gap: 10px; padding: 12px; }
+  .brand-grid .brand__mark { width: 52px; height: 52px; }
+  .brand-grid .brand__info { padding-right: 0; }
+  .brand-grid .brand__name { font-size: 13px; }
+}
 
 .brand {
   position: relative; display: flex; align-items: center; gap: 14px;
@@ -368,7 +374,7 @@ a.brand:hover .brand__arrow { color: var(--ink); transform: rotate(45deg); }
 .about__media img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
 .about__bio { margin-top: 24px; color: var(--muted); font-size: 17px; }
 .about__bio p + p { margin-top: 16px; }
-.about__sign { display: flex; align-items: baseline; gap: 16px; margin-top: 36px; }
+.about__sign { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin-top: 36px; }
 @media (max-width: 900px) {
   .about { grid-template-columns: 1fr; }
   .about__media { max-width: 460px; }
@@ -415,7 +421,15 @@ a.brand:hover .brand__arrow { color: var(--ink); transform: rotate(45deg); }
 
 .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2.4vw, 28px); }
 @media (max-width: 900px) { .work-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 520px) { .work-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .work-grid { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
+  .work-grid .work__ph { font-size: 20px; padding: 12px; }
+  .work-grid .work__type { left: 8px; top: 8px; padding: 4px 9px; font-size: 10px; }
+  .work-grid .work__info { padding: 10px 0 0 2px; }
+  .work-grid .work__brand { font-size: 19px; }
+  .work-grid .work__meta { font-size: 11.5px; line-height: 1.4; }
+  .work-grid .work__arrow { display: none; }
+}
 
 .work {
   position: relative; display: flex; flex-direction: column; text-align: left;
