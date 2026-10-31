@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prajakta Biradar — Content Creator & Social Media Manager</title>
+  <meta name="description" content="Portfolio of Prajakta Biradar: content creator and social media manager with 3+ years of brand collaborations across fitness, beauty, wellness and hospitality." />
+
+  <!-- Link preview when shared on WhatsApp / LinkedIn / iMessage (needs the full URL) -->
+  <meta property="og:title" content="Prajakta Biradar — Content Creator & Social Media Manager" />
+  <meta property="og:description" content="3+ years of brand collaborations. See the campaigns, the brands and how to work with me." />
+  <meta property="og:image" content="https://d-hackmt.github.io/neha-portfolio/assets/images/portrait.jpg" />
+  <meta property="og:url" content="https://d-hackmt.github.io/neha-portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#F7F4EE" />
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo" data-bind="name">Prajakta</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Collaborations</a>
+        <a href="#brands">Brands</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--dark btn--sm" href="#contact">Work with me</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <span class="badge"><span class="badge__dot"></span>Open for collaborations · <span data-bind="year"></span></span>
+          <p class="hero__intro"><span data-bind="fullName">Prajakta Biradar</span> — <span data-bind="role"></span></p>
+          <h1 class="hero__title">Turning brands into stories people <em>save</em>.</h1>
+          <p class="hero__lead" data-bind="tagline"></p>
+
+          <div class="hero__cta">
+            <a class="btn btn--dark" href="#work">View collaborations</a>
+            <a class="btn btn--ghost js-whatsapp" href="#" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <figure class="hero__visual reveal">
+          <div class="arch">
+            <img data-bind-src="portrait" alt="Portrait of Prajakta Biradar" class="arch__img" />
+            <div class="arch__fallback" aria-hidden="true">Your portrait</div>
+          </div>
+          <figcaption>
+            <a class="hero__handle js-instagram" href="#" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+              <span data-bind="handle"></span>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <dl class="hero__stats reveal">
+          <div><dt>Years experience</dt><dd data-bind="experience"></dd></div>
+          <div><dt>Brands &amp; venues</dt><dd data-bind="brandCount"></dd></div>
+          <div><dt>Instagram followers</dt><dd data-bind="followersShort"></dd></div>
+          <div><dt>Posts created</dt><dd data-bind="postCount"></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ BRAND WALL ============ -->
+    <section class="brands" id="brands">
+      <div class="container">
+        <header class="brands__head reveal">
+          <p class="eyebrow">Brands I've worked with</p>
+          <p class="muted">Tap a brand to visit its page.</p>
+        </header>
+        <div class="brand-grid" id="brandGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img data-bind-src="aboutImage" alt="Prajakta Biradar creating content" />
+          <div class="about__fallback" aria-hidden="true">Lifestyle photo</div>
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">About me</p>
+          <h2 class="h2">A creator who thinks like a <em>marketer</em>.</h2>
+          <div class="about__bio" data-bind-html="bio"></div>
+          <ul class="chips" id="skills" aria-label="Key skills"></ul>
+          <div class="about__sign">
+            <span class="script" data-bind="fullName">Prajakta Biradar</span>
+            <span class="muted"><span data-bind="education"></span> · <span data-bind="location"></span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSIGHTS ============ -->
+    <section class="section section--sand" id="insights">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Audience insights</p>
+          <h2 class="h2">Numbers that <em>matter</em> to brands.</h2>
+          <p class="muted">Updated <span data-bind="statsUpdated"></span> · Source: Instagram Insights</p>
+        </header>
+
+        <div class="stats" id="stats"></div>
+
+        <div class="audience">
+          <article class="card reveal">
+            <h3 class="card__title">Gender</h3>
+            <div class="bars" id="audGender"></div>
+          </article>
+          <article class="card reveal">
+            <h3 class="card__title">Age groups</h3>
+            <div class="bars" id="audAge"></div>
+          </article>
+          <article class="card reveal">
+            <h3 class="card__title">Top cities</h3>
+            <div class="bars" id="audCities"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COLLABORATIONS ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Selected collaborations</p>
+          <h2 class="h2">Campaigns, with <em>proof</em>.</h2>
+          <p class="muted">Tap any campaign to watch it right here, or open the original post on Instagram.</p>
+        </header>
+
+        <div class="filters" id="filters" role="tablist" aria-label="Filter by category"></div>
+        <div class="work-grid" id="workGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section section--ink" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow eyebrow--light">What I offer</p>
+          <h2 class="h2">Ways we can <em>work together</em>.</h2>
+        </header>
+        <div class="services" id="services-list"></div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section" id="process">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 class="h2">From brief to <em>live</em> in four steps.</h2>
+        </header>
+        <ol class="process" id="processList"></ol>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section section--sand" id="testimonials">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Kind words</p>
+          <h2 class="h2">What brands <em>say</em>.</h2>
+        </header>
+        <div class="quotes" id="quotes"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact__intro reveal">
+          <p class="eyebrow">Let's create</p>
+          <h2 class="h2">Have a brand that deserves <em>attention</em>?</h2>
+          <p class="muted">Share a few details and I'll get back within 24 hours with ideas, timelines and rates.</p>
+
+          <ul class="contact__list">
+            <li>
+              <a class="contact__item js-whatsapp" href="#" target="_blank" rel="noopener">
+                <span class="contact__icon"><svg class="icon"><use href="#i-whatsapp"/></svg></span>
+                <span><small>WhatsApp</small><strong data-bind="phonePretty"></strong></span>
+              </a>
+            </li>
+            <li>
+              <a class="contact__item js-email" href="#">
+                <span class="contact__icon"><svg class="icon"><use href="#i-mail"/></svg></span>
+                <span><small>Email</small><strong data-bind="email"></strong></span>
+              </a>
+            </li>
+            <li>
+              <a class="contact__item js-instagram" href="#" target="_blank" rel="noopener">
+                <span class="contact__icon"><svg class="icon"><use href="#i-instagram"/></svg></span>
+                <span><small>Instagram</small><strong data-bind="handle"></strong></span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="btn btn--ghost btn--sm" id="printKit" type="button">
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Download media kit (PDF)
+          </button>
+        </div>
+
+        <form class="form card reveal" id="enquiry" novalidate>
+          <h3 class="card__title">Collaboration enquiry</h3>
+          <div class="form__row">
+            <label>Your name<input name="name" required autocomplete="name" /></label>
+            <label>Brand / company<input name="brand" required /></label>
+          </div>
+          <label>Type of collaboration
+            <select name="type" id="formType"></select>
+          </label>
+          <label>Budget range (optional)
+            <select name="budget">
+              <option value="">Prefer to discuss</option>
+              <option>Barter / product exchange</option>
+              <option>Under ₹10,000</option>
+              <option>₹10,000 – ₹25,000</option>
+              <option>₹25,000 – ₹50,000</option>
+              <option>₹50,000+</option>
+            </select>
+          </label>
+          <label>Tell me about the campaign<textarea name="message" rows="4" required></textarea></label>
+          <p class="form__error" id="formError" role="alert" hidden>Please fill in your name, brand and a short message.</p>
+          <div class="form__actions">
+            <button class="btn btn--dark" type="submit" data-via="whatsapp">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg> Send on WhatsApp
+            </button>
+            <button class="btn btn--ghost" type="submit" data-via="email">
+              <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Send by email
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="nav__logo" data-bind="name">Prajakta</span>
+      <p class="muted">© <span data-bind="year"></span> <span data-bind="fullName"></span>. All campaign content belongs to the respective brands.</p>
+      <a href="#top" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a class="wa-float js-whatsapp" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <!-- Collaboration detail modal -->
+  <dialog class="modal" id="modal" aria-labelledby="modalTitle">
+    <button class="modal__close" id="modalClose" aria-label="Close">×</button>
+    <div class="modal__body" id="modalBody"></div>
+  </dialog>
+
+  <!-- ============ ICON SPRITE ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36A9.4 9.4 0 0 1 2.6 12.05C2.6 6.84 6.84 2.6 12.06 2.6c2.52 0 4.9.99 6.68 2.77a9.38 9.38 0 0 1 2.76 6.68c0 5.21-4.24 9.45-9.45 9.45M20.1 4.03A11.3 11.3 0 0 0 12.05.7C5.79.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.33 11.33 0 0 0 5.42 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M7 2.8h10A4.2 4.2 0 0 1 21.2 7v10a4.2 4.2 0 0 1-4.2 4.2H7A4.2 4.2 0 0 1 2.8 17V7A4.2 4.2 0 0 1 7 2.8Z"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3.5 5.5h17v13h-17z"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="m3.8 6 8.2 7 8.2-7"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 3.5v11m0 0 4.5-4.5M12 14.5 7.5 10M4 19.5h16"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M7 17 17 7m0 0H9m8 0v8"/></symbol>
+  </svg>
+
+  <!-- 1) Your content lives here — edit this file. 2) The rendering logic. -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
