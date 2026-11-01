@@ -58,13 +58,13 @@ const PROFILE = {
    ------------------------------------------------------------- */
 const BRANDS = [
   { id: "whattheflex", name: "What the Flex", work: "Content production", logo: "assets/logos/whattheflex.png", url: "https://www.instagram.com/reel/DaXkKZpNNlp/" },
-  { id: "kpilates", name: "K Pilates", work: "Promotional reel", logo: "", url: "https://www.instagram.com/kpilatesofficial/" },
+  { id: "kpilates", name: "K Pilates", work: "Promotional reel", logo: "assets/logos/kpilates.png", url: "https://www.instagram.com/kpilatesofficial/" },
   { id: "verosha", name: "Verosha – The Cave Spa", work: "Video production", logo: "assets/logos/verosha.png", url: "https://www.instagram.com/verosha.thecavespa/" },
-  { id: "florian", name: "Florian Hurel Hair Couture & Spa", work: "Transformation reel", logo: "", url: "https://www.instagram.com/florianhurelhaircoutureandspa/" },
-  { id: "etude", name: "ETUDE India", work: "Brand reel", logo: "", url: "https://www.instagram.com/reel/DcJE4gRNwOG/" },
-  { id: "highland", name: "Highland Baner", work: "Venue promotion", logo: "", url: "https://www.instagram.com/reel/CxpwmVuKXm2/" },
-  { id: "bringbalance", name: "Bring Balance", work: "Website shoot", logo: "", url: "https://www.instagram.com/p/DHTXonntLAx/" },
-  { id: "bastion", name: "Bastion", work: "Venue promotion", logo: "", url: "" },
+  { id: "florian", name: "Florian Hurel Hair Couture & Spa", work: "Transformation reel", logo: "assets/logos/florian.png", url: "https://www.instagram.com/florianhurelhaircoutureandspa/" },
+  { id: "etude", name: "ETUDE India", work: "Brand reel", logo: "assets/logos/etude.png", url: "https://www.instagram.com/reel/DcJE4gRNwOG/" },
+  { id: "highland", name: "Highland Baner", work: "Venue promotion", logo: "assets/logos/highland.png", url: "https://www.instagram.com/reel/CxpwmVuKXm2/" },
+  { id: "bringbalance", name: "Bring Balance", work: "Website shoot", logo: "assets/logos/bringbalance.png", url: "https://www.instagram.com/p/DHTXonntLAx/" },
+  { id: "bastian", name: "Bastian", work: "Venue promotion", logo: "assets/logos/bastian-sign.jpg", logoFill: true, url: "" }, // plain wordmark: assets/logos/bastian.png // TODO: add Instagram link
   { id: "muscleblaze", name: "MuscleBlaze", work: "Product review", logo: "assets/logos/muscleblaze.svg", logoDark: true, url: "https://www.muscleblaze.com/" },
   { id: "mcaffeine", name: "mCaffeine", work: "Product review", logo: "assets/logos/mcaffeine.png", url: "https://www.mcaffeine.com/" },
   { id: "explosivewhey", name: "Explosive Whey", work: "Product review", logo: "assets/logos/explosivewhey.png", url: "https://explosivewhey.com/" },

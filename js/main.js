@@ -85,7 +85,7 @@
     const tag = b.url ? "a" : "div";
     const attrs = b.url ? ` href="${esc(b.url)}" target="_blank" rel="noopener"` : "";
     return `
-      <${tag} class="brand reveal${b.logoDark ? " brand--dark" : ""}"${attrs}>
+      <${tag} class="brand reveal${b.logoDark ? " brand--dark" : ""}${b.logoFill ? " brand--fill" : ""}"${attrs}>
         <span class="brand__mark">${brandMark(b)}</span>
         <span class="brand__info">
           <span class="brand__name">${esc(b.name)}</span>
@@ -94,6 +94,13 @@
         ${b.url ? '<svg class="icon brand__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>' : ""}
       </${tag}>`;
   }).join("");
+
+  // Wide wordmarks (e.g. "BRING · BALANCE") get a wider tile so they stay legible
+  const markWide = (img) => {
+    const check = () => img.naturalWidth / img.naturalHeight > 2.2 && img.parentElement.classList.add("is-wide");
+    img.complete ? check() : img.addEventListener("load", check, { once: true });
+  };
+  $$(".brand__mark img").forEach(markWide);
 
   /* ---------- Skills ---------- */
   $("#skills").innerHTML = PROFILE.skills.map((n) => `<li class="chip">${esc(n)}</li>`).join("");
