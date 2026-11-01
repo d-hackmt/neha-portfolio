@@ -57,7 +57,7 @@ const PROFILE = {
    url:      where the tile links to (website or Instagram)
    ------------------------------------------------------------- */
 const BRANDS = [
-  { id: "whattheflex", name: "What the Flex", work: "Content production", logo: "", url: "https://www.instagram.com/reel/DaXkKZpNNlp/" },
+  { id: "whattheflex", name: "What the Flex", work: "Content production", logo: "assets/logos/whattheflex.png", url: "https://www.instagram.com/reel/DaXkKZpNNlp/" },
   { id: "kpilates", name: "K Pilates", work: "Promotional reel", logo: "", url: "https://www.instagram.com/kpilatesofficial/" },
   { id: "verosha", name: "Verosha – The Cave Spa", work: "Video production", logo: "assets/logos/verosha.png", url: "https://www.instagram.com/verosha.thecavespa/" },
   { id: "florian", name: "Florian Hurel Hair Couture & Spa", work: "Transformation reel", logo: "", url: "https://www.instagram.com/florianhurelhaircoutureandspa/" },
