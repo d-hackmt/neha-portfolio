@@ -457,8 +457,6 @@ a.brand:hover .brand__arrow { color: var(--ink); transform: rotate(45deg); }
   font-family: var(--font-display); font-size: 34px; color: var(--accent-deep);
 }
 .work__ph.is-shown, .is-missing > .work__ph { display: grid; }
-.work__ph.has-logo img { width: auto; height: auto; max-width: 55%; max-height: 28%; object-fit: contain; transform: none; }
-.work__ph--dark { background: var(--ink); }
 .work__type {
   position: absolute; left: 14px; top: 14px;
   padding: 6px 12px; border-radius: var(--radius-btn);

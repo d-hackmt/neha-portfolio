@@ -147,12 +147,9 @@
   ];
 
   // Screenshot if provided, otherwise a tile with the brand's logo or name
-  const placeholder = (c, i, shown) => {
-    const b = brandById[c.brand];
-    const inner = b && b.logo ? `<img src="${esc(b.logo)}" alt="" />` : esc(collabTitle(c));
-    const dark = b && b.logoDark ? " work__ph--dark" : "";
-    return `<span class="work__ph${dark}${shown ? " is-shown" : ""}${b && b.logo ? " has-logo" : ""}" style="--tone:${tones[i % tones.length]}">${inner}</span>`;
-  };
+  // Until a screenshot is added the card shows the brand name; logos stay on the brand wall only
+  const placeholder = (c, i, shown) =>
+    `<span class="work__ph${shown ? " is-shown" : ""}" style="--tone:${tones[i % tones.length]}">${esc(collabTitle(c))}</span>`;
   const media = (c, i) =>
     c.image
       ? `<img src="${esc(c.image)}" alt="${esc(collabTitle(c))} campaign screenshot" loading="lazy"
